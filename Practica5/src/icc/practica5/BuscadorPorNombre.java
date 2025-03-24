@@ -7,7 +7,7 @@ import icc.util.Buscador;
 
 /**
  * Clase que busca registros de agenda con un nombre dado.
- */
+**/
 public class BuscadorPorNombre implements Buscador{
 
   /* Nombre que se busca */
@@ -16,6 +16,7 @@ public class BuscadorPorNombre implements Buscador{
   /**
    * Construye al buscador con el nombre que
    * va a buscar.
+   * @param nombre nombre buscar dentro del registro.
   */
   public BuscadorPorNombre(String nombre) {
     nombreBuscado = nombre;
@@ -24,7 +25,7 @@ public class BuscadorPorNombre implements Buscador{
   /**
    * Metodo que indica si el objeto pasado como parametro
    * es el que se esta buscando.
-   * @param reg Registro que se desea saber si corresponde
+   * @param registro Registro que se desea saber si corresponde
    * al nombre buscado.
    * @return si <code>reg</code> tiene ese nombre.
   */

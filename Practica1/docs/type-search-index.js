@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"icc1.practica1","l":"ClaseReloj"},{"p":"icc1.practica1","l":"Reloj"},{"p":"icc1.practica1","l":"TiempoSistema"},{"p":"icc1.practica1","l":"UsoReloj"},{"p":"icc1.practica1","l":"VistaReloj"},{"p":"icc1.practica1","l":"VistaRelojAnalogico"}];updateSearchResults();

@@ -12,7 +12,7 @@ import icc.practica5.BuscadorPorNombre;
  * Una base de datos debe ser capaz de obtener registros, y campos
  * de sus registros, y debe ser capaz de reconocer si un campo o registro
  * solicitado no existe, y dar una respuesta coherente.
-*/
+**/
 public class BaseDeDatosAgenda { 
 
   /**
@@ -20,7 +20,9 @@ public class BaseDeDatosAgenda {
   */
   private ManejadorDeLista tabla;
 
-  //Constructor para bases de datos vacias//
+  /**
+   * Constructor para bases de datos vacias
+  **/
   public BaseDeDatosAgenda(){
     tabla = null;
   }
@@ -29,8 +31,10 @@ public class BaseDeDatosAgenda {
    * Constructor.
    * @param datos Una cadena con el formato requerido por esta base
    * con los registros de nombres, direcciones y telefonos.
-   * @param tam_nombre 
-  */
+   * @param tam_nombre tamaño en carácteres del nombre.
+   * @param tam_direccion tamaño en carácteres de la dirección.
+   * @param tam_telefono tamaño en digitos del teléfono.
+  **/
   public BaseDeDatosAgenda(String datos, int tam_nombre, int tam_direccion, int tam_telefono) {    
     // TODO: Crear el ManejadorDeLista para almacenar ahi los registros.
     int tam_registro = tam_nombre + tam_direccion + tam_telefono;
@@ -58,6 +62,11 @@ public class BaseDeDatosAgenda {
 
   }
 
+  /** 
+   * Método que busca un registro en la base de datos dado un nombre.
+   * @param nombre el nombre de la persona a buscar. 
+   * @return el registro con el nombre indicado si se encuentra, null si no.
+  **/
   public RegistroAgenda dameRegistroPorNombre (String nombre) {
     // TODO: Usa BuscadorPorNombre y el método encuentra de ManejadorDeLista
     // para encontrar el registro correcto dentro de la lista.
@@ -70,6 +79,11 @@ public class BaseDeDatosAgenda {
 
   }
 
+  /** 
+   * Método que busca un registro en la base de datos dado un número de teléfono.
+   * @param tel el número telefónico de la persona a buscar. 
+   * @return el registro con el número telefónico indicado si se encuentra, null si no.
+  **/
   public RegistroAgenda dameRegistroPorTelefono (int tel) {
     // TODO: Crea la clase BuscadorPorTelefono en forma similar a BuscadorPorNombre
     // Usa BuscadorPorTelefono y el metodo encuentra de ManejadorDeLista

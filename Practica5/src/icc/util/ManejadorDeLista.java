@@ -20,6 +20,7 @@ public class ManejadorDeLista {
 
   /**
    * Agrega un registro agenda al final de la lista.
+   * @param elemento el nuevo registro a añadir en la lista.
   */
   public void agrega(RegistroAgenda elemento) {
     // Crea el nuevo elemento y lo cuenta.
@@ -43,23 +44,22 @@ public class ManejadorDeLista {
 
   /**
    * Devuelve el numero de elementos en esta lista.
+   * @return la longitud entera de la lista.
   */
   public int getLongitud() {
     return longitud;
   }
 
   /**
-   * Por ahora utilizaremos este metodo para poder
-   * programar la busqueda en la base de datos.
+   * Método para que define la la busqueda en la base de datos.
+   * @param buscador el objeto que se encarga de hacer al búsqueda dentro de la lista.
+   * @return el registro buscado si lo encuentra, null si no.
   */
   public RegistroAgenda encuentra(Buscador buscador) {
     // TODO: Utiliza al objeto buscador para encontrar
     // al registro agenda con el dato solicitado.
-    RegistroAgenda resultado = new RegistroAgenda();
-
-    if(cabeza == null){
-      resultado = null;
-    }else{   
+    RegistroAgenda resultado = null;
+    if(cabeza != null){        
       ListaAgenda registro_actual = cabeza;
       while(registro_actual.getSiguiente() != null) {
         RegistroAgenda elemento = registro_actual.getRegistro();

@@ -16,7 +16,8 @@ public class BuscadorPorTelefono implements Buscador{
   /**
    * Construye al buscador con el telefono que
    * va a buscar.
-  */
+   * @param telefono el número telefónico a buscar dentro del registro.
+  **/
   public BuscadorPorTelefono(int telefono) {
     telBuscado = telefono;
   }
@@ -24,12 +25,11 @@ public class BuscadorPorTelefono implements Buscador{
   /**
    * Metodo que indica si el objeto pasado como parametro
    * es el que se esta buscando.
-   * @param reg Registro que se desea saber si corresponde
+   * @param registro Registro que se desea saber si corresponde
    * al telefono buscado.
    * @return si <code>reg</code> tiene ese telefono.
   */
-  public boolean esEste(RegistroAgenda registro) {
-    
+  public boolean esEste(RegistroAgenda registro) {    
     return registro.getTelefono() == telBuscado;
   }
 
