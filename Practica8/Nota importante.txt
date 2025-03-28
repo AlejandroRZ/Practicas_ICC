@@ -1,4 +1,0 @@
-Dado que las excepciones siempre se propagan desde el punto en el que son lanzadas hasta la entrada a main, al ejecutar el programa las 2 excepciones que se generan se muestran al inicio de la ejecución (una fue capturada con try{}catch{}, la otra simplemente decidi lanzarla), tal vez en la ejecución misma no luzcan muy bonitas(esto sólo pasa con ant al parecer, no con mi editor de texto), pero decidi dejarlas para que se viera que mi programa da respuestas coherentes a situaciones excepcionales.
-
-
-:)

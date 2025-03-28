@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"icc.practica8","l":"Matriz2D"},{"p":"icc.practica8","l":"UsoMatriz2D"}];updateSearchResults();
