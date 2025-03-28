@@ -1,0 +1,87 @@
+/* -*- jde -*- */
+/* <RegistroAgenda.java> */
+
+package icc.practica7;
+import java.io.PrintStream;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+/**
+ * Registro para una Agenda
+ */
+public class RegistroAgenda { 
+  private String nombre;
+  private String direccion;
+  private int telefono;
+ 
+  /* Datos que se almacenaran en el registro
+   * @param nombre
+   * @param direccion
+   * @param telefono  
+   */
+  public RegistroAgenda(){
+    nombre = null;
+    direccion = null;
+    telefono = 0;
+  }
+  /* Datos que se almacenaran en el registro
+   * @param nombre
+   * @param direccion
+   * @param telefono  
+   */
+  
+  public RegistroAgenda(String nombre, String direccion, int telefono){
+    this.nombre = nombre;
+    this.direccion = direccion;
+    this.telefono = telefono;
+  }
+/*Metodos get para obtener información del registro*/
+  public String getNombre(){
+    return nombre;
+  }
+  
+  public String getDireccion(){
+    return direccion;
+  }
+  
+  public int getTelefono(){
+    return telefono;
+  }
+ /*Metodos set para actualizar los datos de tu contacto*/
+  public void setNombre(String nom){
+    nombre = nom;
+  }
+  
+  public void setDireccion(String dir){
+    direccion = dir;
+  }
+  
+  public void setTelefono(int tel){
+    telefono = tel;
+  }
+ /*Devuelve una cadena con los datos en el registro en un formato agradable*/
+ public String toString() {
+   return "Nombre: " + nombre + "\t" + "Dirección: " + direccion + "\t" + "Telefono: "+ telefono;
+ }
+/*Metodo para llenar registros desde archivo
+ * @param un lector de archivos
+ * @return un registro
+ */ 
+
+ public static RegistroAgenda llenaRegistro(BufferedReader bf){
+ RegistroAgenda register = new RegistroAgenda();
+ try{
+ register.setNombre(bf.readLine());
+ register.setDireccion(bf.readLine());
+ register.setTelefono(Integer.parseInt(bf.readLine()));
+  }catch(FileNotFoundException e){
+ System.err.println("No se encontro el archivo .txt");
+  }catch(NumberFormatException nbo){
+    System.err.println("El archivo se encuentra alterado y no es posible hacer la asignacion");
+    }catch(IOException ioe){
+    System.err.println("Error al leer el contenido de texto.txt");
+    }
+ return register;    
+ }
+
+}

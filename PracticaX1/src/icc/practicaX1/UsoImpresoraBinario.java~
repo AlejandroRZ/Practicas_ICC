@@ -1,0 +1,21 @@
+package icc.practicaX1
+public class UsoImpresoraBinario{ 
+ 
+  public static void main (String[]args){
+    double nan = Double.NaN;
+    double minf = Double.NEGATIVE_INFINITY;
+    double pinf = Double.POSITIVE_INFINITY;
+    double cero = 0.0;
+    double mcero = -0.0;
+    
+    ImpresoraBinario impresora;  
+    
+    impresora = new ImpresoraBinario();
+    impresora.imprime(nan);
+    impresora.imprime(minf);
+    impresora.imprime(pinf);
+    impresora.imprime(cero);
+    impresora.imprime(mcero);
+  }
+
+}

@@ -1,0 +1,12 @@
+Javier Alejandro Rivera Zavala - 311288876
+
+
+1- Las diferencias más notables que se observan es que en los últimos casos, para el tipo float y el tipo double por como esta estipulada su representación, en el número binario que se nos muestra se incluyen, signo, exponente y coeficiente (mantiza), además de que claramente la representación abarca un mayor número de bits.
+
+2- No hay preguntas :D
+
+3- el -456, es decir la parte entera.
+
+4- 888
+
+5- No hay preguntas :D

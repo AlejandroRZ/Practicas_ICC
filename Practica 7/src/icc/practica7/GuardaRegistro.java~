@@ -1,0 +1,23 @@
+package icc.practica7;
+import icc.util.Buscador;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
+
+public class GuardaRegistro implements Buscador{
+private PrintStream impresor;
+
+public GuardaRegistro(PrintStream pis){
+impresor = pis;
+}
+
+public boolean esEste(Object obj){
+  RegistroAgenda registrin = (RegistroAgenda)obj;
+  impresor.println(registrin.getNombre());
+  impresor.println(registrin.getDireccion());
+  impresor.println(registrin.getTelefono());
+  return false;
+  }
+
+
+}
