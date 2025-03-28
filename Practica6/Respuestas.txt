@@ -1,1 +1,0 @@
-Hipotésis: Por que bien podríamos querer guardar neustros contactos (registro) en otra cosa que no sea una lista (un arreglo por ejemplo) y al tener a la clase RegistroAgenda en el mismo paquete que BaseDeDAtosAgenda garantizamos que este puede ser extendido por cualquier clase que implemente un contenedor y así reutilizar la mayor cantidad de código posible. 

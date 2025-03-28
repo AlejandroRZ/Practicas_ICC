@@ -1,6 +1,15 @@
-package icc.practicaX1;
+package icc.practica0;
+
+/**
+ * Clase de uso para la impresora en binario.
+ * @author AlejandroRZ 
+**/
 public class UsoImpresoraBinario{ 
- 
+  
+  /**
+   * Entrada en ejecuciÃ³n a main.
+   * @param args argumentos opcionales para la ejecuciÃ³n.
+  **/
   public static void main (String[]args){
     double nan = Double.NaN;
     double minf = Double.NEGATIVE_INFINITY;
@@ -36,33 +45,33 @@ public class UsoImpresoraBinario{
     ImpresoraBinario impresora;  
     impresora = new ImpresoraBinario();
     
-    System.out.println("¡Hola cocodrilo!, ¿Qué tal te va por el Nilo?");
+    System.out.println("Â¡Hola cocodrilo!, Â¿QuÃ© tal te va por el Nilo?");
     
     
     //Actividades de 1.1 a 1.4//
-    System.out.println("Así se ve el NaN");
+    System.out.println("AsÃ­ se ve el NaN");
     impresora.imprime(nan);
-    System.out.println("Así se ve el infinito negativo");
+    System.out.println("AsÃ­ se ve el infinito negativo");
     impresora.imprime(minf);
-    System.out.println("Así se ve el infinito positivo");
+    System.out.println("AsÃ­ se ve el infinito positivo");
     impresora.imprime(pinf);
-    System.out.println("Así se ve el cero positivo");
+    System.out.println("AsÃ­ se ve el cero positivo");
     impresora.imprime(cero);
-    System.out.println("Así se ve el cero negativo");
+    System.out.println("AsÃ­ se ve el cero negativo");
     impresora.imprime(mcero);
-    System.out.println("Así se ven los registros");
+    System.out.println("AsÃ­ se ven los registros");
     impresora.imprime(permisos);
-    System.out.println("Así se ven los registros con << 1 ");
+    System.out.println("AsÃ­ se ven los registros con << 1 ");
     impresora.imprime(corrimiento1);
-    System.out.println("Así se ven los registros con << 3 ");
+    System.out.println("AsÃ­ se ven los registros con << 3 ");
     impresora.imprime(corrimiento2);
-    System.out.println("Así se ven los registros con >> 1");
+    System.out.println("AsÃ­ se ven los registros con >> 1");
     impresora.imprime(corrimiento3);
-    System.out.println("Así se ven los registros con >> 3");
+    System.out.println("AsÃ­ se ven los registros con >> 3");
     impresora.imprime(corrimiento4);
-    System.out.println("Así se ven los registros con >>> 1");
+    System.out.println("AsÃ­ se ven los registros con >>> 1");
     impresora.imprime(corrimiento5);
-    System.out.println("Así se ven los registros con >>> 3");
+    System.out.println("AsÃ­ se ven los registros con >>> 3");
     impresora.imprime(corrimiento6);
     System.out.println("Para darle acceso de escritura a todos basta con un corrimiento a la derecha");
     impresora.imprime(corrimiento3);

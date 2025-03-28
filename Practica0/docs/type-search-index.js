@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"icc.practica0","l":"ImpresoraBinario"},{"p":"icc.practica0","l":"UsoImpresoraBinario"}];updateSearchResults();

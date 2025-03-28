@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <project name="practicaX1" default="compile" basedir=".">
+  <project name="practica0" default="compile" basedir=".">
   <target name="compile">
     <mkdir dir="build"/>
     <javac srcdir="src" destdir="build" debug="true" debuglevel="source"/>
   </target>
 
   <target name="runUsoImpresoraBinario" depends="compile">
-    <java classname="icc.practicaX1.UsoImpresoraBinario" fork="true">
+    <java classname="icc.practica0.UsoImpresoraBinario" fork="true">
       <classpath>
  <pathelement path ="build"/>
       </classpath>
@@ -18,7 +18,7 @@
   </target>
   
   <target name="docs">
-    <javadoc sourcepath="src" destdir="docs" packagenames="icc.practicaX1"/>
+    <javadoc sourcepath="src" destdir="docs" packagenames="icc.practica0"/>
   </target>
   
   <target name="clean">
